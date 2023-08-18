@@ -1,0 +1,275 @@
+/*reset styles starts*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background-image: url(./img/fondo.png);
+  background-size: 100% 100%;
+}
+/*reset styles ends*/
+
+/*styles starts*/
+.contenido {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.inicio-juego {
+  position: absolute;
+  padding: 1rem;
+  border: thin solid black;
+  border-radius: 15px;
+  margin-top: 23rem;
+  cursor: pointer;
+}
+
+.inicio-juego__texto {
+  font-size: 2.5rem;
+  color: white;
+  border: thin solid black;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #ff41ec9f;
+}
+
+.inicio-juego:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.marcador-contenedor {
+  position: relative;
+  width: 100%;
+}
+
+.marcador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+}
+
+.marcador__aviso--alineacion{
+ display: none; 
+  width: 15%;
+  text-align: center;
+  margin: 2rem auto 0;
+}
+
+.marcador__aviso {
+  font-size: 1rem;
+  color: white;
+  border: thin solid black;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background-color: #ff41ec9f;
+}
+
+
+.marcador__btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 0;
+  width: 40%;
+}
+
+.marcador__btns button {
+  background-color: #4f3b78;
+  width: 5rem;
+  border: thin 1px black;
+  border-radius: 4px;
+}
+
+.marcador___decision {
+  width: 60%;
+}
+
+.marcador__msn {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+  color: white;
+}
+
+.marcador__puntaje {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.marcador__puntaje div:nth-child(odd) {
+  text-align: center;
+  background-color: #ff41ec4f;
+
+  width: 10rem;
+  min-height: 9rem;
+  border: thin solid black;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.marcador__puntaje div p {
+  font-size: 1.5rem;
+  color: white;
+  border: thin 5px solid black;
+}
+
+.marcador__puntaje div span {
+  font-size: 5rem;
+  color: white;
+}
+
+#mensaje {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.opciones {
+  position: absolute;
+  margin-top: 42rem;
+  width: 100%;
+  height: 20vh;
+}
+
+.opciones__contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: inherit;
+  margin: 0 auto;
+}
+
+.opciones__contenedor div {
+  width: calc(100% / 3);
+}
+
+.opciones__contenedor__img {
+  width: 100%;
+  height: inherit;
+  cursor: pointer;
+}
+
+.opciones__contenedor__img img {
+  width: 100%;
+  height: inherit;
+}
+
+.opciones__contenedor__img img:hover {
+  transform: scale(1.15);
+  transition-duration: 0.2s;
+}
+
+.otras-opciones {
+  position: absolute;
+  margin-top: 42rem;
+  width: 100%;
+  height: 20vh;
+}
+
+.otras-opciones__contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: inherit;
+  margin: 0 auto;
+}
+
+.otras-opciones__contenedor div {
+  width: calc(100% / 3);
+}
+
+.otras-opciones__contenedor__img {
+  width: 100%;
+  height: inherit;
+  cursor: pointer;
+}
+
+.otras-opciones__contenedor__img img {
+  width: 100%;
+  height: inherit;
+}
+
+.otras-opciones__contenedor__img img:hover {
+  transform: scale(1.15);
+  transition-duration: 0.2s;
+}
+
+.reiniciar {
+  position: absolute;
+  width: 100%;
+  margin-top: 58rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.reiniciar__texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 15rem;
+  max-width: 15rem;
+  margin: 0 auto;
+  height: inherit;
+}
+
+.reiniciar__texto p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  padding: 1rem;
+  background-color: #272343;
+  color: white;
+  border: PowderBlue 5px solid;
+  border-radius: 20px;
+  border: thin solid black;
+}
+
+.reiniciar__texto p:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.titulo-principal {
+  font-size: 2.8rem;
+  margin-top: 6rem;
+  padding: 1rem;
+  background-color: #272343;
+  color: white;
+  border: PowderBlue 5px solid;
+  border-radius: 20px;
+  border: thin solid black;
+}
+
+#piedra {
+  width: 400px;
+  height: auto;
+}
+/*styles ends*/

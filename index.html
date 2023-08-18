@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The best rock, paper, scissors game on the web">
+  <title>Piedra, papel o tijera</title>
+  <link rel="stylesheet" href="piedraPapelOTijera.css">
+  <link rel="stylesheet" href="./css-tablet/tablet.css" media="(max-width:800px)">
+  <link rel="stylesheet" href="./css-phone/phone.css" media="(max-width:500px)">
+</head>
+
+<body>
+<!--main starts-->
+<main>
+  <!--sections contenido starts-->
+  <section class="contenido">
+
+    <div class=" titulo-principal">
+      <h1>- Piedra, papel o tijera -</h1>
+    </div>
+
+    <div class=" inicio-juego  ">
+      <h2 class="inicio-juego__texto">¡Juguemos!</h2>
+    </div>
+
+    <section class="marcador-contenedor hidden">
+      <div class="marcador__aviso marcador__aviso--alineacion">
+        <h2>Marcador</h2>
+      </div>
+
+      <div class="marcador ">
+
+        <div class="marcador__puntaje">
+          <div>
+            <p>- Tú -</p>
+            <span class="marcador__contador">0</span>
+          </div>
+
+          <div class="marcador__aviso marcador__aviso--ocultar">
+            <h2>Marcador</h2>
+          </div>
+
+          <div>
+            <p>- Máquina -</p>
+            <span class="marcador__contador2">0</span>
+          </div>
+        </div>
+
+        <div class="marcador__msn-contenedor hidden"> 
+          <div class="marcador__msn">
+            <div class="marcador___decision">
+              <p id="mensaje"></p>
+            </div>              
+              <div class="marcador__btns" >
+                <button class="btn-si"> SI</button>
+                <button class="btn-no">NO</button>
+              </div> 
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="opciones hidden">
+
+      <div class="opciones__contenedor">
+
+        <div class="opciones__contenedor__img">
+          <img src="./img/piedra.png" alt="piedra" class="piedra">
+        </div>
+        <div class="opciones__contenedor__img">
+          <img src="./img/papel.png" alt="papel" class="papel">
+        </div>
+        <div class="opciones__contenedor__img">
+          <img src="./img/tijera.png" alt="tijera" class="tijera">
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="otras-opciones">
+
+      <div class="otras-opciones__contenedor">
+
+        <div class="otras-opciones__contenedor__img">
+          <img src="./img/piedra.png" alt="piedra" class="piedra">
+        </div>
+        <div class="opciones__contenedor__img">
+          <img src="./img/papel.png" alt="papel" class="papel">
+        </div>
+        <div class="opciones__contenedor__img">
+          <img src="./img/tijera.png" alt="tijera" class="tijera">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="reiniciar hidden ">
+      <div class="reiniciar__texto ">
+        <p class="reiniciar__enunciado">- Reiniciar juego -</p>
+      </div>
+    </section>
+
+  </section>
+  <!--sections contenido ends-->
+
+</main>
+<!--main ends-->
+  <!--script js-->
+  <script src="piedraPapeloTijera.js"></script>
+</body>
+
+</html>

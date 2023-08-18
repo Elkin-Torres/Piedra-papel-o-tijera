@@ -1,0 +1,47 @@
+.titulo-principal{
+  max-width: 48rem;
+  min-width: 40rem;
+}
+
+.titulo-principal h1{
+  font-size: 3.5rem;
+}
+
+.inicio-juego__texto{
+  min-width: 14rem;
+  font-size: 2rem;
+}
+
+.marcador__aviso--alineacion{
+  display:flex;
+  justify-content: center;
+  width: 15%;
+  margin: 2rem auto 0;
+}
+
+.marcador__aviso--ocultar{
+  display: none;
+}
+
+.marcador__msn{
+  margin-top: 3rem;
+}
+
+.marcador__puntaje{
+  min-width: 29rem;
+  margin-top: 1rem;
+}
+
+#mensaje{
+  font-size: 1.6rem;
+}
+
+.opciones{
+  height: 17vh;
+  margin-top: 44rem;
+}
+
+.reiniciar__texto p{
+  font-size: 1.3rem;
+  width: 100%;
+}

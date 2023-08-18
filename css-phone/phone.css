@@ -1,0 +1,29 @@
+.titulo-principal{
+min-width: 30rem;
+}
+
+.titulo-principal h1{
+  font-size: 2.5rem;
+}
+
+.marcador {
+  width: 100%;
+}
+
+.marcador__aviso--alineacion{
+  min-width: 7rem;
+}
+
+.marcador__msn{
+  width: 80%;
+  min-width: 30rem;
+  margin: 4rem auto 0 ;
+}
+
+#mensaje{
+  font-size: 1.5rem;
+}
+
+.opciones__contenedor{
+  min-width: 20rem;
+}
